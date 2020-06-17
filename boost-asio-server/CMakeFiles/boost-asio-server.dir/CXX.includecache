@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/ReadConnection.hpp
+WriteConnection.hpp
+/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/WriteConnection.hpp
+
+/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/Server.cpp
+Server.hpp
+/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/Server.hpp
+
+/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/Server.hpp
+list
+-
+boost/asio.hpp
+-
+ReadConnection.hpp
+/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/ReadConnection.hpp
+
+/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/WriteConnection.hpp
+iostream
+-
+boost/asio.hpp
+-
+

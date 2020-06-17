@@ -1,0 +1,3 @@
+/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles/rebuild_cache.dir
+/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles/edit_cache.dir
+/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles/boost-asio-server.dir
