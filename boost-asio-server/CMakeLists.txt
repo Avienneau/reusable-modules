@@ -10,8 +10,8 @@ set(CMAKE_CXX_STANDARD_17)
 add_compile_options(-Wall -std=c++17)
 set(SRCS
 	Source/main.cpp
-	Source/Transmission/WriteConnection.cpp
-	Source/Transmission/ReadConnection.cpp
+	Source/Transmission/ConnectionBase.cpp
+	Source/Transmission/Connection.cpp
 	Source/Transmission/Server.cpp
 	)
 

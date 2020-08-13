@@ -1,10 +1,10 @@
-#include "ReadConnection.hpp"
+#include "Connection.hpp"
 
 #include <iostream>
 
 using namespace Transmission;
 
-void ReadConnection::readFromSocket()
+void Connection::readFromSocket()
 {
 	async_read_until(m_socket, m_inputBuffer, '\n', [this](boost::system::error_code error, std::size_t bytes) {
 		if(error)

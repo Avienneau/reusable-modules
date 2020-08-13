@@ -70,31 +70,31 @@ CMakeFiles/boost-asio-server.dir/Source/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost-asio-server.dir/Source/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/main.cpp -o CMakeFiles/boost-asio-server.dir/Source/main.cpp.s
 
-CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.o: CMakeFiles/boost-asio-server.dir/flags.make
-CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.o: Source/Transmission/WriteConnection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.o -c /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/WriteConnection.cpp
+CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.o: CMakeFiles/boost-asio-server.dir/flags.make
+CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.o: Source/Transmission/ConnectionBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.o -c /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/ConnectionBase.cpp
 
-CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/WriteConnection.cpp > CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.i
+CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/ConnectionBase.cpp > CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.i
 
-CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/WriteConnection.cpp -o CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.s
+CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/ConnectionBase.cpp -o CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.s
 
-CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.o: CMakeFiles/boost-asio-server.dir/flags.make
-CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.o: Source/Transmission/ReadConnection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.o -c /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/ReadConnection.cpp
+CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.o: CMakeFiles/boost-asio-server.dir/flags.make
+CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.o: Source/Transmission/Connection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.o -c /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/Connection.cpp
 
-CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/ReadConnection.cpp > CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.i
+CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/Connection.cpp > CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.i
 
-CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/ReadConnection.cpp -o CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.s
+CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/Connection.cpp -o CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.s
 
 CMakeFiles/boost-asio-server.dir/Source/Transmission/Server.cpp.o: CMakeFiles/boost-asio-server.dir/flags.make
 CMakeFiles/boost-asio-server.dir/Source/Transmission/Server.cpp.o: Source/Transmission/Server.cpp
@@ -112,16 +112,16 @@ CMakeFiles/boost-asio-server.dir/Source/Transmission/Server.cpp.s: cmake_force
 # Object files for target boost-asio-server
 boost__asio__server_OBJECTS = \
 "CMakeFiles/boost-asio-server.dir/Source/main.cpp.o" \
-"CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.o" \
-"CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.o" \
+"CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.o" \
+"CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.o" \
 "CMakeFiles/boost-asio-server.dir/Source/Transmission/Server.cpp.o"
 
 # External object files for target boost-asio-server
 boost__asio__server_EXTERNAL_OBJECTS =
 
 boost-asio-server: CMakeFiles/boost-asio-server.dir/Source/main.cpp.o
-boost-asio-server: CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.o
-boost-asio-server: CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.o
+boost-asio-server: CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.o
+boost-asio-server: CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.o
 boost-asio-server: CMakeFiles/boost-asio-server.dir/Source/Transmission/Server.cpp.o
 boost-asio-server: CMakeFiles/boost-asio-server.dir/build.make
 boost-asio-server: /usr/local/lib/libboost_system-mt.dylib

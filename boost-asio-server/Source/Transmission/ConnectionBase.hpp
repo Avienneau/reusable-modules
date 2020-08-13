@@ -6,7 +6,7 @@
 
 namespace Transmission
 {
-	class WriteConnection
+	class ConnectionBase
 	{
 	public:
 		using SocketType = boost::asio::ip::tcp::socket;
@@ -47,7 +47,7 @@ namespace Transmission
 			m_socket.shutdown(SocketType::shutdown_receive);
 		}
 	protected:
-		explicit WriteConnection(SocketType&& socket)
+		explicit ConnectionBase(SocketType&& socket)
 		: m_socket{std::move(socket)},
 			m_outputBuffer{},
 			m_writeBuffer{},

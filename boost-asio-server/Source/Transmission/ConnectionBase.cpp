@@ -1,8 +1,8 @@
-#include "WriteConnection.hpp"
+#include "ConnectionBase.hpp"
 
 using namespace Transmission;
 
-void WriteConnection::writeToSocket()
+void ConnectionBase::writeToSocket()
 {
 	// If a write is currently happening...
 	if(m_awaitingWrite)

@@ -1,15 +1,15 @@
 #ifndef READ_CONNECTION_HPP
 #define READ_CONNECTION_HPP
 
-#include "WriteConnection.hpp"
+#include "ConnectionBase.hpp"
 
 namespace Transmission
 {
-	class ReadConnection : public WriteConnection
+	class Connection : public ConnectionBase
 	{
 	public:
-		ReadConnection(SocketType&& socket)
-		: WriteConnection{std::move(socket)},
+		Connection(SocketType&& socket)
+		: ConnectionBase{std::move(socket)},
 			m_inputBuffer{},
 			m_inputStream{&m_inputBuffer}
 		{

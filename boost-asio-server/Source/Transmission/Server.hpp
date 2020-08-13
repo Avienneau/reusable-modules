@@ -3,7 +3,7 @@
 
 #include <list>
 #include <boost/asio.hpp>
-#include "ReadConnection.hpp"
+#include "Connection.hpp"
 
 namespace Transmission
 {
@@ -23,7 +23,7 @@ namespace Transmission
 		boost::asio::ip::tcp::acceptor m_acceptor;
 		boost::asio::ip::tcp::socket m_nextSocket;
 		
-		std::list<ReadConnection> m_connections;
+		std::list<Connection> m_connections;
 	};
 }
 

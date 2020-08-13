@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/boost-serialization-versioning.dir/main.cpp.o  -o boost-serialization-versioning /usr/local/lib/libboost_system-mt.dylib -lboost_serialization -lboost_filesystem -lboost_system 

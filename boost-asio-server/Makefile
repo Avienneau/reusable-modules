@@ -123,32 +123,59 @@ boost-asio-server/fast:
 	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/build
 .PHONY : boost-asio-server/fast
 
-Source/Transmission/ReadConnection.o: Source/Transmission/ReadConnection.cpp.o
+Source/Transmission/Connection.o: Source/Transmission/Connection.cpp.o
 
-.PHONY : Source/Transmission/ReadConnection.o
+.PHONY : Source/Transmission/Connection.o
 
 # target to build an object file
-Source/Transmission/ReadConnection.cpp.o:
-	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.o
-.PHONY : Source/Transmission/ReadConnection.cpp.o
+Source/Transmission/Connection.cpp.o:
+	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.o
+.PHONY : Source/Transmission/Connection.cpp.o
 
-Source/Transmission/ReadConnection.i: Source/Transmission/ReadConnection.cpp.i
+Source/Transmission/Connection.i: Source/Transmission/Connection.cpp.i
 
-.PHONY : Source/Transmission/ReadConnection.i
+.PHONY : Source/Transmission/Connection.i
 
 # target to preprocess a source file
-Source/Transmission/ReadConnection.cpp.i:
-	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.i
-.PHONY : Source/Transmission/ReadConnection.cpp.i
+Source/Transmission/Connection.cpp.i:
+	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.i
+.PHONY : Source/Transmission/Connection.cpp.i
 
-Source/Transmission/ReadConnection.s: Source/Transmission/ReadConnection.cpp.s
+Source/Transmission/Connection.s: Source/Transmission/Connection.cpp.s
 
-.PHONY : Source/Transmission/ReadConnection.s
+.PHONY : Source/Transmission/Connection.s
 
 # target to generate assembly for a file
-Source/Transmission/ReadConnection.cpp.s:
-	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.s
-.PHONY : Source/Transmission/ReadConnection.cpp.s
+Source/Transmission/Connection.cpp.s:
+	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.s
+.PHONY : Source/Transmission/Connection.cpp.s
+
+Source/Transmission/ConnectionBase.o: Source/Transmission/ConnectionBase.cpp.o
+
+.PHONY : Source/Transmission/ConnectionBase.o
+
+# target to build an object file
+Source/Transmission/ConnectionBase.cpp.o:
+	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.o
+.PHONY : Source/Transmission/ConnectionBase.cpp.o
+
+Source/Transmission/ConnectionBase.i: Source/Transmission/ConnectionBase.cpp.i
+
+.PHONY : Source/Transmission/ConnectionBase.i
+
+# target to preprocess a source file
+Source/Transmission/ConnectionBase.cpp.i:
+	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.i
+.PHONY : Source/Transmission/ConnectionBase.cpp.i
+
+Source/Transmission/ConnectionBase.s: Source/Transmission/ConnectionBase.cpp.s
+
+.PHONY : Source/Transmission/ConnectionBase.s
+
+# target to generate assembly for a file
+Source/Transmission/ConnectionBase.cpp.s:
+	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.s
+.PHONY : Source/Transmission/ConnectionBase.cpp.s
 
 Source/Transmission/Server.o: Source/Transmission/Server.cpp.o
 
@@ -176,33 +203,6 @@ Source/Transmission/Server.s: Source/Transmission/Server.cpp.s
 Source/Transmission/Server.cpp.s:
 	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/Server.cpp.s
 .PHONY : Source/Transmission/Server.cpp.s
-
-Source/Transmission/WriteConnection.o: Source/Transmission/WriteConnection.cpp.o
-
-.PHONY : Source/Transmission/WriteConnection.o
-
-# target to build an object file
-Source/Transmission/WriteConnection.cpp.o:
-	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.o
-.PHONY : Source/Transmission/WriteConnection.cpp.o
-
-Source/Transmission/WriteConnection.i: Source/Transmission/WriteConnection.cpp.i
-
-.PHONY : Source/Transmission/WriteConnection.i
-
-# target to preprocess a source file
-Source/Transmission/WriteConnection.cpp.i:
-	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.i
-.PHONY : Source/Transmission/WriteConnection.cpp.i
-
-Source/Transmission/WriteConnection.s: Source/Transmission/WriteConnection.cpp.s
-
-.PHONY : Source/Transmission/WriteConnection.s
-
-# target to generate assembly for a file
-Source/Transmission/WriteConnection.cpp.s:
-	$(MAKE) -f CMakeFiles/boost-asio-server.dir/build.make CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.s
-.PHONY : Source/Transmission/WriteConnection.cpp.s
 
 Source/main.o: Source/main.cpp.o
 
@@ -240,15 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... boost-asio-server"
-	@echo "... Source/Transmission/ReadConnection.o"
-	@echo "... Source/Transmission/ReadConnection.i"
-	@echo "... Source/Transmission/ReadConnection.s"
+	@echo "... Source/Transmission/Connection.o"
+	@echo "... Source/Transmission/Connection.i"
+	@echo "... Source/Transmission/Connection.s"
+	@echo "... Source/Transmission/ConnectionBase.o"
+	@echo "... Source/Transmission/ConnectionBase.i"
+	@echo "... Source/Transmission/ConnectionBase.s"
 	@echo "... Source/Transmission/Server.o"
 	@echo "... Source/Transmission/Server.i"
 	@echo "... Source/Transmission/Server.s"
-	@echo "... Source/Transmission/WriteConnection.o"
-	@echo "... Source/Transmission/WriteConnection.i"
-	@echo "... Source/Transmission/WriteConnection.s"
 	@echo "... Source/main.o"
 	@echo "... Source/main.i"
 	@echo "... Source/main.s"

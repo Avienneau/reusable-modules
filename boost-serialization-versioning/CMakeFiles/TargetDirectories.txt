@@ -1,0 +1,3 @@
+/Users/avienneau/Projects/reusable-modules/boost-serialization-versioning/CMakeFiles/rebuild_cache.dir
+/Users/avienneau/Projects/reusable-modules/boost-serialization-versioning/CMakeFiles/edit_cache.dir
+/Users/avienneau/Projects/reusable-modules/boost-serialization-versioning/CMakeFiles/boost-serialization-versioning.dir

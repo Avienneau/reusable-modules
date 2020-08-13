@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/ReadConnection.cpp" "/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.o"
+  "/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/Connection.cpp" "/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.o"
+  "/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/ConnectionBase.cpp" "/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.o"
   "/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/Server.cpp" "/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles/boost-asio-server.dir/Source/Transmission/Server.cpp.o"
-  "/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/Transmission/WriteConnection.cpp" "/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.o"
   "/Users/avienneau/Projects/reusable-modules/boost-asio-server/Source/main.cpp" "/Users/avienneau/Projects/reusable-modules/boost-asio-server/CMakeFiles/boost-asio-server.dir/Source/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

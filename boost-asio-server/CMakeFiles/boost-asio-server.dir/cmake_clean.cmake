@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/boost-asio-server.dir/Source/main.cpp.o"
-  "CMakeFiles/boost-asio-server.dir/Source/Transmission/WriteConnection.cpp.o"
-  "CMakeFiles/boost-asio-server.dir/Source/Transmission/ReadConnection.cpp.o"
+  "CMakeFiles/boost-asio-server.dir/Source/Transmission/ConnectionBase.cpp.o"
+  "CMakeFiles/boost-asio-server.dir/Source/Transmission/Connection.cpp.o"
   "CMakeFiles/boost-asio-server.dir/Source/Transmission/Server.cpp.o"
   "boost-asio-server.pdb"
   "boost-asio-server"
