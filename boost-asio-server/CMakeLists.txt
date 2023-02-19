@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 3.0 )
+cmake_minimum_required( VERSION 3.24 )
 project(boost-asio-server)
 
 find_package( Boost COMPONENTS system REQUIRED )
