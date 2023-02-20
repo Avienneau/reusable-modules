@@ -1,19 +1,8 @@
 cmake_minimum_required( VERSION 3.24 )
 project(boost-asio-server)
 
-find_package( Boost COMPONENTS system REQUIRED )
-find_package( Threads )
+if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
+  message(FATAL_ERROR "In source builds are not allowed. Please use: cmake -B <build-tree> -S <source-tree>")
+endif()
 
-include_directories( ${Boost_INCLUDE_DIR} . )
-
-set(CMAKE_CXX_STANDARD_17)
-add_compile_options(-Wall -std=c++17)
-set(SRCS
-	Source/main.cpp
-	Source/Transmission/ConnectionBase.cpp
-	Source/Transmission/Connection.cpp
-	Source/Transmission/Server.cpp
-	)
-
-add_executable(boost-asio-server ${SRCS})
-target_link_libraries(boost-asio-server LINK_PUBLIC ${Boost_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+add_subdirectory(src)

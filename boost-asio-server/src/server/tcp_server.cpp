@@ -1,35 +1,35 @@
-#include "Server.hpp"
+#include "tcp_server.hpp"
 
-using namespace Transmission;
+using namespace server;
 
-Server::Server(int port)
+tcp_server::tcp_server(int port)
 : m_port{port},
 	m_io_service{},
 	m_signal_set(m_io_service, SIGINT, SIGTERM),
 	m_acceptor(m_io_service, boost::asio::ip::tcp::endpoint(
 		boost::asio::ip::tcp::v6(), port)),
-	m_nextSocket{m_io_service},
+	m_next_socket{m_io_service},
 	m_connections{}
 {
 
 }
 
-void Server::run()
+void tcp_server::run()
 {			
 	m_signal_set.async_wait([this](boost::system::error_code error, int signal) {
 		if(error != boost::asio::error::operation_aborted)
 		{
-			std::cout << "Server received signal (" << signal << ") requesting shutdown." << std::endl;
+			std::cout << "tcp_server received signal (" << signal << ") requesting shutdown." << std::endl;
 			shutdown();
 		}
 	});
 
 	accept();
-	std::cout << "Server started. Listening for connections on port " << m_port << "." << std::endl;
+	std::cout << "tcp_server started. Listening for connections on port " << m_port << "." << std::endl;
 	m_io_service.run();
 }
 
-void Server::shutdown()
+void tcp_server::shutdown()
 {
 	m_acceptor.cancel();
 	m_signal_set.cancel();
@@ -40,17 +40,17 @@ void Server::shutdown()
 	}
 }
 
-void Server::accept()
+void tcp_server::accept()
 {
-	m_acceptor.async_accept(m_nextSocket,
+	m_acceptor.async_accept(m_next_socket,
 		[this](boost::system::error_code error)
 		{
 			if(!error)
 			{
-				m_connections.emplace_front(std::move(m_nextSocket));
+				m_connections.emplace_front(std::move(m_next_socket));
 				auto connection = m_connections.begin();
 
-				connection->setCloseHandler([this, connection]() {
+				connection->set_close_handler([this, connection]() {
 					m_connections.erase(connection);
 					std::cout << "Connection closed. Connection list size: " << m_connections.size() << "." << std::endl;
 				});

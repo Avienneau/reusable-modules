@@ -1,8 +1,8 @@
 #include <iostream>
 
-#include "Transmission/Server.hpp"
+#include "tcp_server.hpp"
 
-using namespace Transmission;
+using namespace server;
 
 namespace
 {
@@ -11,8 +11,8 @@ namespace
 
 int main()
 {
-	Server server(SERVER_PORT);
-	server.run();
+  tcp_server my_server(SERVER_PORT);
+  my_server.run();
 
 	std::cout << "Program terminated normally." << std::endl;
 
